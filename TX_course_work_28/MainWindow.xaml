@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TX_course_work_28"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Музейный учёт" Height="750" Width="1024" Loaded="Window_Loaded">
+    <Grid >
+        <DataGrid x:Name="DataGrid_Time_and_sum" HorizontalAlignment="Left" Height="300" VerticalAlignment="Top" Width="624" Margin="60,85,0,0"  FontSize="16" IsReadOnly="True" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=Hall}" Header="Зал" Width="60" FontWeight="Bold"/>
+                <DataGridTextColumn Binding="{Binding Path=Time_1}" Header="11:00" Width="60"/>
+                <DataGridTextColumn Binding="{Binding Path=Time_2}" Header="12:00" Width="60"/>
+                <DataGridTextColumn Binding="{Binding Path=Time_3}" Header="13:00" Width="60"/>
+                <DataGridTextColumn Binding="{Binding Path=Time_4}" Header="14:00" Width="60"/>
+                <DataGridTextColumn Binding="{Binding Path=Time_5}" Header="15:00" Width="60"/>
+                <DataGridTextColumn  Header="Всего людей" Width="150"/>
+                <DataGridTextColumn Header="Прибыль" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+            
+        <Button Content="Monday" HorizontalAlignment="Left" Height="42" Margin="60,25,0,0" VerticalAlignment="Top" Width="72" />
+        <Button Content="Tuesday " HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Margin="155,25,0,0" Height="42"/>
+        <Button Content="Wednesday " HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="281,25,0,0" Height="42"/>
+        <Button Content="Thursday " HorizontalAlignment="Left" Margin="420,25,0,0" VerticalAlignment="Top" Width="105" Height="42"/>
+        <Button Content="Friday " HorizontalAlignment="Left" Margin="551,25,0,0" VerticalAlignment="Top" Width="104" Height="42"/>
+        <Button Content="Saturday " HorizontalAlignment="Left" Margin="683,25,0,0" VerticalAlignment="Top" Width="104" Height="42"/>
+        <Button Content="Sunday " HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Margin="815,25,0,0" Height="42"/>
+
     </Grid>
 </Window>
