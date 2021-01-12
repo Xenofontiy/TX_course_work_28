@@ -5,8 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TX_course_work_28"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Background="#FFFAFA">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="89*"/>
+            <ColumnDefinition Width="175*"/>
+        </Grid.ColumnDefinitions>
+        <ListView Name="ListOfExhibitions" HorizontalAlignment="Left" Height="267" VerticalAlignment="Top" Width="254" Margin="20,21,0,0" Background="#F0F8FF" Grid.ColumnSpan="2">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text=" "/>
+                        <TextBlock Text="{Binding room}"/>
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView Name="ListwithInformation" HorizontalAlignment="Left" Height="272" VerticalAlignment="Top" Width="257" Margin="221,23,0,0" Background="#F0F8FF" Grid.Column="1">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="Название: "/>
+                        <TextBlock Text="{Binding name}"/>
+                        <TextBlock Text="  "/>
+                        <TextBlock Text="{Binding information}"/>
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Content="Сменить зал" HorizontalAlignment="Left" VerticalAlignment="Top" Width="243" Margin="25,297,0,0" Grid.ColumnSpan="2" Height="30"  Click="ChangeTheHall_Click"/>
+
     </Grid>
 </Window>
