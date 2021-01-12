@@ -47,13 +47,14 @@ namespace TX_course_work_28
         private void ChangeTheHall_Click(object sender, RoutedEventArgs e)
         {
             
-           ListOfExhibitions.ItemsSource = DailyExhibitions.exh;
+          
             switch (Mode)
             {
                 case 0:
                     {
                        
                         DailyExhibitions = new Exhibitions(Mode);
+                        ListOfExhibitions.ItemsSource = DailyExhibitions.exh;
                         ListwithInformation.ItemsSource = DailyExhibitions.exh;
                         Mode = 1;
                         break;
@@ -62,6 +63,7 @@ namespace TX_course_work_28
                     {
                        
                         DailyExhibitions = new Exhibitions(Mode);
+                        ListOfExhibitions.ItemsSource = DailyExhibitions.exh;
                         ListwithInformation.ItemsSource = DailyExhibitions.exh;
                         Mode = 2;
                         break;
@@ -70,6 +72,7 @@ namespace TX_course_work_28
                     {
                        
                         DailyExhibitions = new Exhibitions(Mode);
+                        ListOfExhibitions.ItemsSource = DailyExhibitions.exh;
                         ListwithInformation.ItemsSource = DailyExhibitions.exh;
                         Mode =3 ;
                         break;
@@ -78,6 +81,7 @@ namespace TX_course_work_28
                     {
                         
                         DailyExhibitions = new Exhibitions(Mode);
+                        ListOfExhibitions.ItemsSource = DailyExhibitions.exh;
                         ListwithInformation.ItemsSource = DailyExhibitions.exh;
                         Mode = 4;
                         break;
@@ -86,6 +90,7 @@ namespace TX_course_work_28
                     {
                         
                         DailyExhibitions = new Exhibitions(Mode);
+                        ListOfExhibitions.ItemsSource = DailyExhibitions.exh;
                         ListwithInformation.ItemsSource = DailyExhibitions.exh;
                         Mode=0;
                         break;
