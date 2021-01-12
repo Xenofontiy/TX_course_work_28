@@ -48,27 +48,6 @@ namespace TX_course_work_28.DataGrid
             get { return _Time_5; }
             set { _Time_5 = value; }
         }
-
-
-        /*public DataGrid_time_table(string Hall, int Time_1, int Time_2, int Time_3, int Time_4, int Time_5*, int Sum, int Profit)
-        {
-            this.Hall = Hall;
-            this.Time_1 = Time_1;
-            this.Time_2 = Time_2;
-            this.Time_3 = Time_3;
-            this.Time_4 = Time_4;
-            this.Time_5 = Time_5;
-            this.Sum = Sum;
-            this.Profit = Profit; 
-        }
-        public string Hall { get; set; }
-        public int Time_1 { get; set; }
-        public int Time_2 { get; set; }
-        public int Time_3 { get; set; }
-        public int Time_4 { get; set; }
-        public int Time_5 { get; set; }
-        public int Sum { get; set; }
-        public int Profit { get; set; }*/
     }
 }
 
