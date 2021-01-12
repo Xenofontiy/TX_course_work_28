@@ -8,11 +8,11 @@ namespace TX_course_work_28.DataGrid
 {
     class DataGrid_time_table
     {
-        private string _Hall;
-        public string Hall
+        private string _Excursion;
+        public string Excursion
         {
-            get { return _Hall; }
-            set { _Hall = value; }
+            get { return _Excursion; }
+            set { _Excursion = value; }
         }
 
         private int _Time_1;
