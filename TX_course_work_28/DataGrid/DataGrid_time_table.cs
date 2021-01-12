@@ -48,6 +48,18 @@ namespace TX_course_work_28.DataGrid
             get { return _Time_5; }
             set { _Time_5 = value; }
         }
+        private int _Sum;
+        public int Sum
+        {
+            get { return _Sum; }
+            set { _Sum = value; }
+        }
+        private int _Profit;
+        public int Profit
+        {
+            get { return _Profit; }
+            set { _Profit = value; }
+        }
     }
 }
 

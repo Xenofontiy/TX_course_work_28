@@ -15,8 +15,8 @@
                 <DataGridTextColumn Binding="{Binding Path=Time_3}" Header="13:00" Width="60"/>
                 <DataGridTextColumn Binding="{Binding Path=Time_4}" Header="14:00" Width="60"/>
                 <DataGridTextColumn Binding="{Binding Path=Time_5}" Header="15:00" Width="60"/>
-                <DataGridTextColumn  Header="Всего людей" Width="150"/>
-                <DataGridTextColumn Header="Прибыль" Width="*"/>
+                <DataGridTextColumn Binding="{Binding Path= Sum}" Header="Всего людей" Width="150"/>
+                <DataGridTextColumn Binding="{Binding Path= Profit}" Header="Прибыль" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
             
