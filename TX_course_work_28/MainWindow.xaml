@@ -5,8 +5,90 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TX_course_work_28"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Музейный учёт" Height="750" Width="1024" Loaded="Window_Loaded">
+    <Grid >
+        <DataGrid x:Name="DataGrid_Time_and_sum" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="625" Margin="50,85,0,0"  FontSize="16" 
+                  IsReadOnly="True" AutoGenerateColumns="False" CanUserSortColumns="True" VerticalScrollBarVisibility="Disabled" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=Excursion}" Header="Экскурсия" Width="100" FontWeight="Bold"/>
+                <DataGridTextColumn Binding="{Binding Path=Time_1}" Header="11:00" Width="60"/>
+                <DataGridTextColumn Binding="{Binding Path=Time_2}" Header="12:00" Width="60"/>
+                <DataGridTextColumn Binding="{Binding Path=Time_3}" Header="13:00" Width="60"/>
+                <DataGridTextColumn Binding="{Binding Path=Time_4}" Header="14:00" Width="60"/>
+                <DataGridTextColumn Binding="{Binding Path=Time_5}" Header="15:00" Width="60"/>
+                <DataGridTextColumn Binding="{Binding Path= Sum}" Header="Всего людей" Width="110" SortMemberPath="Sum" />
+                <DataGridTextColumn Binding="{Binding Path= Profit}" Header="Прибыль" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Content="Monday" HorizontalAlignment="Left" Height="40" Margin="50,25,0,0" VerticalAlignment="Top" Width="94" Click="Button_Click" />
+        <Button Content="Tuesday " HorizontalAlignment="Left" VerticalAlignment="Top" Width="94" Margin="184,25,0,0" Height="40" Click="Button_Click_1"/>
+        <Button Content="Wednesday " HorizontalAlignment="Left" VerticalAlignment="Top" Width="94" Margin="319,25,0,0" Height="40" Click="Button_Click_2"/>
+        <Button Content="Thursday " HorizontalAlignment="Left" Margin="453,25,0,0" VerticalAlignment="Top" Width="94" Height="40" Click="Button_Click_3"/>
+        <Button Content="Friday " HorizontalAlignment="Left" Margin="587,25,0,0" VerticalAlignment="Top" Width="94" Height="40" Click="Button_Click_4"/>
+        <Button Content="Saturday " HorizontalAlignment="Left" Margin="722,25,0,0" VerticalAlignment="Top" Width="94" Height="40" Click="Button_Click_5"/>
+        <Button Content="Sunday " HorizontalAlignment="Left" VerticalAlignment="Top" Width="94" Margin="856,25,0,0" Height="40" Click="Button_Click_6"/>
+
+
+
+        <ListView Name="ListOfExhibitions" HorizontalAlignment="Left" Height="267" VerticalAlignment="Top" Width="94" Margin="50,255,0,0" Background="#F0F8FF">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text=" "/>
+                        <TextBlock Text="{Binding room}"/>
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <ListView Name="ListwithInformation" HorizontalAlignment="Left" Height="272" VerticalAlignment="Top" Width="491" Margin="184,255,0,0" Background="#F0F8FF">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="Название: "/>
+                        <TextBlock Text="{Binding name}"/>
+                        <TextBlock Text="  "/>
+                        <TextBlock Text="{Binding information}"/>
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Content="Сменить зал" HorizontalAlignment="Left" VerticalAlignment="Top" Width="243" Margin="50,555,0,0" Height="30"  Click="ChangeTheHall_Click"/>
+
+        <ComboBox x:Name="Time" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="856,85,0,0" SelectionChanged="ComboBox_SelectionChanged_1">
+            <ComboBoxItem>11:00</ComboBoxItem>
+            <ComboBoxItem>12:00</ComboBoxItem>
+            <ComboBoxItem>13:00</ComboBoxItem>
+            <ComboBoxItem>14:00</ComboBoxItem>
+            <ComboBoxItem>15:00</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="Excursion_1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="696,85,0,0" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem>Monday</ComboBoxItem>
+            <ComboBoxItem>Tuesday</ComboBoxItem>
+            <ComboBoxItem>Wednesday</ComboBoxItem>
+            <ComboBoxItem>Thursday</ComboBoxItem>
+            <ComboBoxItem>Friday</ComboBoxItem>
+            <ComboBoxItem>Saturday</ComboBoxItem>
+            <ComboBoxItem>Sunday</ComboBoxItem>
+        </ComboBox>
+        <Button Content="Добавить людей" HorizontalAlignment="Left" VerticalAlignment="Top" Width="101" Margin="875,215,0,0" Click="Button_Click_7"/>
+        <ComboBox x:Name="People1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="856,152,0,0" SelectionChanged="People1_SelectionChanged">
+            <ComboBoxItem>1 человек</ComboBoxItem>
+            <ComboBoxItem>2 человек</ComboBoxItem>
+            <ComboBoxItem>3 человек</ComboBoxItem>
+            <ComboBoxItem>4 человек</ComboBoxItem>
+            <ComboBoxItem>5 человек</ComboBoxItem>
+            <ComboBoxItem>6 человек</ComboBoxItem>
+        </ComboBox>
+        <ComboBox  x:Name="Excursion_2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="696,152,0,0" SelectionChanged="Excursion_2_SelectionChanged">
+            <ComboBoxItem>Экскурсия 1</ComboBoxItem>
+            <ComboBoxItem>Экскурсия 2</ComboBoxItem>
+            <ComboBoxItem>Экскурсия 3</ComboBoxItem>
+            <ComboBoxItem>Экскурсия 4</ComboBoxItem>
+            <ComboBoxItem>Экскурсия 5</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="Text" HorizontalAlignment="Left" Height="23" Margin="696,215,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
     </Grid>
 </Window>
