@@ -72,15 +72,23 @@
             <ComboBoxItem>Saturday</ComboBoxItem>
             <ComboBoxItem>Sunday</ComboBoxItem>
         </ComboBox>
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="875,215,0,0" Click="Button_Click_7"/>
-        <ComboBox x:Name="People1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="856,152,0,0">
-            <ComboBoxItem>1 person</ComboBoxItem>
-            <ComboBoxItem>2_person</ComboBoxItem>
-            <ComboBoxItem>3_person</ComboBoxItem>
-            <ComboBoxItem>4_person</ComboBoxItem>
-            <ComboBoxItem>5_person</ComboBoxItem>
-            <ComboBoxItem>6_person</ComboBoxItem>
+        <Button Content="Добавить людей" HorizontalAlignment="Left" VerticalAlignment="Top" Width="101" Margin="875,215,0,0" Click="Button_Click_7"/>
+        <ComboBox x:Name="People1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="856,152,0,0" SelectionChanged="People1_SelectionChanged">
+            <ComboBoxItem>1 человек</ComboBoxItem>
+            <ComboBoxItem>2 человек</ComboBoxItem>
+            <ComboBoxItem>3 человек</ComboBoxItem>
+            <ComboBoxItem>4 человек</ComboBoxItem>
+            <ComboBoxItem>5 человек</ComboBoxItem>
+            <ComboBoxItem>6 человек</ComboBoxItem>
         </ComboBox>
+        <ComboBox  x:Name="Excursion_2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="696,152,0,0" SelectionChanged="Excursion_2_SelectionChanged">
+            <ComboBoxItem>Экскурсия 1</ComboBoxItem>
+            <ComboBoxItem>Экскурсия 2</ComboBoxItem>
+            <ComboBoxItem>Экскурсия 3</ComboBoxItem>
+            <ComboBoxItem>Экскурсия 4</ComboBoxItem>
+            <ComboBoxItem>Экскурсия 5</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="Text" HorizontalAlignment="Left" Height="23" Margin="696,215,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
