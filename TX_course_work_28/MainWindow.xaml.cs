@@ -264,7 +264,7 @@ namespace TX_course_work_28
                 if (Peaple_sum[x, 6, a] == (c + 1))
                     numer = x;
 
-            Text.Text = ""+ numer+" "+b+" "+a;
+          
 
             Peaple_sum[numer, b, a] = Peaple_sum[numer, b, a]+ Hulman;
             for (int x = 0; x < 5; x++)                                                                                         

@@ -105,6 +105,11 @@
   <ItemGroup>
     <Resource Include="Yulia.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="original.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="3d00d144ca96e73e9dbfddf762a5d9bf.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
