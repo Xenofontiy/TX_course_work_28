@@ -7,6 +7,31 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <ComboBox x:Name="Time" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="157,66,0,0" SelectionChanged="ComboBox_SelectionChanged_1">
+            <ComboBoxItem>11:00</ComboBoxItem>
+            <ComboBoxItem>12:00</ComboBoxItem>
+            <ComboBoxItem>13:00</ComboBoxItem>
+            <ComboBoxItem>14:00</ComboBoxItem>
+            <ComboBoxItem>15:00</ComboBoxItem>
+                       </ComboBox>
+            <ComboBox x:Name="Excursion_1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="0,66,0,0" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem>Monday</ComboBoxItem>
+            <ComboBoxItem>Tuesday</ComboBoxItem>
+            <ComboBoxItem>Wednesday</ComboBoxItem>
+            <ComboBoxItem>Thursday</ComboBoxItem>
+            <ComboBoxItem>Friday</ComboBoxItem>
+            <ComboBoxItem>Saturday</ComboBoxItem>
+            <ComboBoxItem>Sunday</ComboBoxItem>
+        </ComboBox>
+                    <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="352,141,0,0" Click="Button_Click"/>
+        <ComboBox x:Name="People" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="325,66,0,0">
+            <ComboBoxItem>1_person</ComboBoxItem>
+            <ComboBoxItem>2_person</ComboBoxItem>
+            <ComboBoxItem>3_person</ComboBoxItem>
+            <ComboBoxItem>4_person</ComboBoxItem>
+            <ComboBoxItem>5_person</ComboBoxItem>
+            <ComboBoxItem>6_person</ComboBoxItem>
+                            </ComboBox>
+
     </Grid>
 </Window>
