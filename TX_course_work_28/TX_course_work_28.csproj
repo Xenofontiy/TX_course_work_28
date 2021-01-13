@@ -70,6 +70,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NewFolder1\Exhibitions.cs" />
+    <Compile Include="NewFolder1\Hall1.cs" />
+    <Compile Include="NewFolder1\Hall2.cs" />
+    <Compile Include="NewFolder1\Hall3.cs" />
+    <Compile Include="NewFolder1\Hall4.cs" />
+    <Compile Include="NewFolder1\Hall5.cs" />
+    <Compile Include="NewFolder1\interfacee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

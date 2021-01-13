@@ -55,15 +55,15 @@
             </ListView.ItemTemplate>
         </ListView>
         <Button Content="Сменить зал" HorizontalAlignment="Left" VerticalAlignment="Top" Width="243" Margin="50,555,0,0" Height="30"  Click="ChangeTheHall_Click"/>
-        
-        <ComboBox x:Name="Time" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="157,66,0,0" SelectionChanged="ComboBox_SelectionChanged_1">
+
+        <ComboBox x:Name="Time" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="856,85,0,0" SelectionChanged="ComboBox_SelectionChanged_1">
             <ComboBoxItem>11:00</ComboBoxItem>
             <ComboBoxItem>12:00</ComboBoxItem>
             <ComboBoxItem>13:00</ComboBoxItem>
             <ComboBoxItem>14:00</ComboBoxItem>
             <ComboBoxItem>15:00</ComboBoxItem>
         </ComboBox>
-            <ComboBox x:Name="Excursion_1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="0,66,0,0" SelectionChanged="ComboBox_SelectionChanged">
+        <ComboBox x:Name="Excursion_1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="696,85,0,0" SelectionChanged="ComboBox_SelectionChanged">
             <ComboBoxItem>Monday</ComboBoxItem>
             <ComboBoxItem>Tuesday</ComboBoxItem>
             <ComboBoxItem>Wednesday</ComboBoxItem>
@@ -72,9 +72,9 @@
             <ComboBoxItem>Saturday</ComboBoxItem>
             <ComboBoxItem>Sunday</ComboBoxItem>
         </ComboBox>
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="352,141,0,0" Click="Button_Click_7"/>
-        <ComboBox x:Name="People" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="325,66,0,0">
-            <ComboBoxItem>1_person</ComboBoxItem>
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="875,215,0,0" Click="Button_Click_7"/>
+        <ComboBox x:Name="People1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="856,152,0,0">
+            <ComboBoxItem>1 person</ComboBoxItem>
             <ComboBoxItem>2_person</ComboBoxItem>
             <ComboBoxItem>3_person</ComboBoxItem>
             <ComboBoxItem>4_person</ComboBoxItem>
